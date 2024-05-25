@@ -49,12 +49,12 @@ cmake_ninja_workdir = D$:/proejct/CLion/PS_Beakjoon_CPP/cmake-build-debug/
 
 build cmake_object_order_depends_target_Run_CPP: phony || CMakeFiles/Run_CPP.dir
 
-build CMakeFiles/Run_CPP.dir/main_template.cpp.obj: CXX_COMPILER__Run_CPP_unscanned_Debug D$:/proejct/CLion/PS_Beakjoon_CPP/main_template.cpp || cmake_object_order_depends_target_Run_CPP
+build CMakeFiles/Run_CPP.dir/01_by_level/01_io_and_arithmetics/11_11382.cpp.obj: CXX_COMPILER__Run_CPP_unscanned_Debug D$:/proejct/CLion/PS_Beakjoon_CPP/01_by_level/01_io_and_arithmetics/11_11382.cpp || cmake_object_order_depends_target_Run_CPP
   DEFINES = -DLOCAL_DEBUG
-  DEP_FILE = CMakeFiles\Run_CPP.dir\main_template.cpp.obj.d
+  DEP_FILE = CMakeFiles\Run_CPP.dir\01_by_level\01_io_and_arithmetics\11_11382.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Run_CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles\Run_CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\Run_CPP.dir\01_by_level\01_io_and_arithmetics
 
 
 # =============================================================================
@@ -64,7 +64,7 @@ build CMakeFiles/Run_CPP.dir/main_template.cpp.obj: CXX_COMPILER__Run_CPP_unscan
 #############################################
 # Link the executable Run_CPP.exe
 
-build Run_CPP.exe: CXX_EXECUTABLE_LINKER__Run_CPP_Debug CMakeFiles/Run_CPP.dir/main_template.cpp.obj
+build Run_CPP.exe: CXX_EXECUTABLE_LINKER__Run_CPP_Debug CMakeFiles/Run_CPP.dir/01_by_level/01_io_and_arithmetics/11_11382.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Run_CPP.dir
