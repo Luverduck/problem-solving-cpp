@@ -21,10 +21,10 @@ int main()
             return 0;
 
         if(second % first == 0)
-            cout << "factor" << "\n";
+            cout << "factor\n";
         else if(first % second == 0)
-            cout << "multiple" << "\n";
+            cout << "multiple\n";
         else
-            cout << "neither" << "\n";
+            cout << "neither\n";
     }
 }
