@@ -24,8 +24,8 @@ int main()
     while(N > max)
     {
         // 다음 층으로 이동
-        max += 6 * level;
-        level++;
+        max += 6 * level; // 가장 큰 방 번호 갱신
+        level++; // 층 수 갱신
     }
 
     // 최종 층 수 출력
