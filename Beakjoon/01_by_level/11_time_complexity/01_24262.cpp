@@ -4,7 +4,7 @@
 using namespace std;
 
 // 코드 1의 수행 횟수
-int count = 0;
+long long count = 0;
 
 // 알고리즘
 int MenOfPassion(const vector<int>& vec, const int n)
