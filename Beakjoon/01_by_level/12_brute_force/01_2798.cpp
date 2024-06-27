@@ -33,16 +33,14 @@ int main()
         {
             for(int k = j + 1; k < N; ++k)
             {
+                // 숫자 합이 목표값과 같을 경우 루프 종료
+                if(sum_max == M)
+                    break;
                 // 카드 3장의 숫자 합 계산
                 sum_temp = cards[i] + cards[j] + cards[k];
                 // 숫자 합이 M을 넘지 않으며 이전에 갱신한 값보다 큰 경우
                 if(sum_temp <= M && sum_temp > sum_max)
-                {
-                    // 숫자 합의 최대값 갱신
-                    sum_max = sum_temp;
-                    // 숫자 합이 목표값과 같을 경우 루프 종료
-                    if(sum_max == M) break;
-                }
+                    sum_max = sum_temp; // 숫자 합의 최대값 갱신
             }
         }
     }
