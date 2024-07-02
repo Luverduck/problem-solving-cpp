@@ -24,6 +24,6 @@ int main()
     // 배열의 요소를 내림차순 정렬
     sort(score, score + N, greater<>());
 
-    // 컷트라인 점수 출력
+    // 커트라인 점수 출력
     cout << score[k - 1];
 }
