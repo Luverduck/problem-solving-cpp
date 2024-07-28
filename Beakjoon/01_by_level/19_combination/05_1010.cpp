@@ -22,10 +22,10 @@ int main()
     {
         cin >> N >> M;
         // M Combination N 계산
+        // ⭐ N Combination (K+1) = N Combination K * (N-K) / (K+1)
         long long result = 1;
         for(int j = 0; j < N; ++j)
         {
-            // ⭐ 정수 오버플로우를 방지하기 위해 곱 연산과 나눗셈 연산을 병행
             result *= (M - j);
             result /= (j + 1);
         }
