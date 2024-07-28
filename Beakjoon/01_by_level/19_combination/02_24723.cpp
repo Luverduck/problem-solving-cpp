@@ -12,12 +12,13 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 
+    // 녹색 거탑의 높이 N
     int N;
     cin >> N;
 
+    // 녹색 거탑의 높이 N만큼 비트 왼쪽 시프트 연산
     int result = 1;
-    for(int i = 0; i < N; ++i)
-        result <<= 1;
+    result <<= N;
 
     cout << result;
 }
