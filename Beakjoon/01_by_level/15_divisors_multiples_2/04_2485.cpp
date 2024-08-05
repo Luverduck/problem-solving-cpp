@@ -5,6 +5,7 @@ using namespace std;
 
 int gcd(int a, int b)
 {
+    // a와 b의 최대 공약수를 반환
     while(b != 0)
     {
         long long r = a % b;
