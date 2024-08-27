@@ -53,7 +53,7 @@ void merge_sort(int A[], int p, int r)
     }
 };
 
-void merge(int A[], const int p, const int q, const int r)
+void merge(int A[], int p, int q, int r)
 {
     // ✅ flag가 true이면 코드를 실행하지 않는다.
     if(flag) return;
