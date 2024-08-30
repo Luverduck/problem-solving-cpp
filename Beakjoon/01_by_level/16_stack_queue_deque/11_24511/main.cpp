@@ -30,20 +30,20 @@ int main() {
     {
         cin >> temp;
         if(action[n] == 1) continue;
-        dq.emplace_back(temp);
+        dq.emplace_front(temp); // ⭐ 역순 삽입
     }
 
     // queuestack에 저장할 요소의 수
     int M;
     cin >> M;
 
-    // 양방향 큐의 맨 앞에 요소 저장 및 맨 뒤의 요소 출력 후 삭제
+    // 양방향 큐의 맨 뒤에 요소 저장 및 맨 앞의 요소 출력 후 삭제
     int x;
     for(int m = 0; m < M; ++m)
     {
         cin >> x;
-        dq.emplace_front(x);
-        cout << dq.back() << ' ';
-        dq.pop_back();
+        dq.emplace_back(x);
+        cout << dq.front() << ' ';
+        dq.pop_front();
     }
 }
