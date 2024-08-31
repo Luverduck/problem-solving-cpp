@@ -37,6 +37,6 @@ int main()
     {
         cin >> temp;
         // 벡터에 해당 정수가 존재하면 1, 그렇지 않으면 0을 출력
-        cout << (binary_search(nums.begin(), nums.end(), temp) ? 1 : 0) << "\n";
+        cout << binary_search(nums.begin(), nums.end(), temp) << "\n";
     }
 }
