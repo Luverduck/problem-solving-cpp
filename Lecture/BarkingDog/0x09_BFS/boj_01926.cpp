@@ -9,7 +9,7 @@ int painting[501][501];
 bool visit[501][501];
 // 방문한 좌표를 저장할 queue
 queue<pair<int, int>> q;
-// 4방향 탐색을 위한 좌표의 보정값
+// 탐색 방향 지정을 위한 x, y의 좌표 보정값 배열
 int dx[4] {1, 0, -1, 0};
 int dy[4] {0, 1, 0, -1};
 
@@ -54,15 +54,15 @@ int main()
                 // queue의 맨 앞에 저장된 좌표를 cur에 저장한 후 꺼내기
                 pair<int, int> cur = q.front();
                 q.pop();
-                // 꺼낸 좌표 cur에 대하여 4방향 탐색
+                // 현재 좌표 cur에 대하여 4방향 탐색
                 for(int dir = 0; dir < 4; ++dir)
                 {
                     // 방향 좌표 계산
                     int nx = cur.first + dx[dir];
                     int ny = cur.second + dy[dir];
-                    // 해당 좌표가 그림의 영역을 벗어나는 경우 다음 방향 좌표 탐색
+            		// 다음 탐색 좌표의 요소가 탐색 범위를 벗어나면 다음 방향 탐색
                     if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-                    // 해당 좌표를 이미 방문했거나 색칠되지 않은 영역일 경우 다음 방향 좌표 탐색
+                    // 다음 좌표를 이미 방문했거나 색칠되지 않은 영역일 경우 다음 방향 좌표 탐색
                     if(visit[nx][ny] == true || painting[nx][ny] != 1) continue;
                     // 좌표의 방문 여부를 true로 변경
                     visit[nx][ny] = true;
