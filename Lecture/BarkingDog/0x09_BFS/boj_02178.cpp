@@ -62,8 +62,7 @@ int main()
             if(dist[nx][ny] != -1 || miro[nx][ny] == 0) continue;
             // 그 외의 경우
             // 시작점에서 현재 방향의 탐색 좌표까지의 거리를 저장
-            dist[nx][ny] = dist[cur.first][cur.second];
-            dist[nx][ny]++;
+            dist[nx][ny] = dist[cur.first][cur.second] + 1;
             // 방문한 현재 방향의 탐색 좌표를 queue에 저장
             q.push({nx, ny});
         }
