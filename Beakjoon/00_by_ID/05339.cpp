@@ -12,7 +12,8 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 
-    cout << R"(     /~\
+    cout <<
+R"(     /~\
     ( oo|
     _\=/_
    /  _  \
