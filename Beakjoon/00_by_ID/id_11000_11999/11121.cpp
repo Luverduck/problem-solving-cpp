@@ -14,24 +14,10 @@ int main()
 
     int T;
     cin >> T;
-
-    string input, output;
-    for (int t = 0; t < T; ++t)
+    while (T--)
     {
+        string input, output;
         cin >> input >> output;
-        if (input.length() != output.length())
-        {
-            cout << "ERROR" << '\n';
-            continue;
-        }
-        bool flag = true;
-        for (int i = 0; i < input.length(); ++i)
-        {
-            if (input[i] == output[i]) continue;
-            flag = false;
-            break;
-        }
-        cout << (flag ? "OK" : "ERROR") << '\n';
+        cout << (input == output ? "OK" : "ERROR") << '\n';
     }
-
 }
