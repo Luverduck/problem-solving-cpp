@@ -9,9 +9,9 @@ void solution()
     int res = 0;
     for (int n = 0; n < N; ++n)
     {
-        int wi, li;
-        cin >> wi >> li;
-        res += wi * li;
+        int w, l;
+        cin >> w >> l;
+        res += w * l;
     }
     cout << res / W;
 }
