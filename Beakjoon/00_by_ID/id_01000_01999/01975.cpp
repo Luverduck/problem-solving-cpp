@@ -4,24 +4,25 @@ using namespace std;
 
 void solution()
 {
+    int arr[1001] { 0, };
+    for (int i = 2; i <= 1000; ++i)
+    {
+        for (int j = i; j <= 1000; j *= i)
+        {
+            for (int k = j; k <= 1000; k += j)
+            {
+                arr[k]++;
+            }
+        }
+    }
+
     int T;
     cin >> T;
     for (int t = 0; t < T; ++t)
     {
         int N;
         cin >> N;
-        int res = 0;
-        for (int n = 2; n <= N; ++n)
-        {
-            int temp = N;
-            while (temp)
-            {
-                if (temp % n != 0) break;
-                temp /= n;
-                res++;
-            }
-        }
-        cout << res << '\n';
+        cout << arr[N] << '\n';
     }
 }
 
